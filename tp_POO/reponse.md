@@ -51,3 +51,6 @@ ce changement est car lorsque l'objet est créer sa création s'affiche puis fin
 
 2.3.c il detruit dans l' ordre inverse  de leur  création c-à-d si on a creer tout dabort $a puis $b ,la premiére qui sera détruit est $b puis $a.
 
+
+3.2 avec __set , si on écrit  $p->nom = "X" si nom est private , l'affichage est normal .
+      Sans __set , dans l'execution on a un erreur  : "Fatal error: Uncaught Error: Cannot access private property Personne::$nom" car le nom est private 
